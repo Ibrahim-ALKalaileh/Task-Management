@@ -1,0 +1,113 @@
+
+
+.toggle-switch {
+  position: relative;
+  width: 50rem;
+  height: 40rem;
+  background-color: #87CEEB;
+  border-radius: 50rem;
+  box-shadow: 0 0 10rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 1s ease;
+ 
+}
+
+.toggle-switch .switch {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  width: 60rem;
+  height: 60rem;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: left 1s cubic-bezier(0.68, -0.55, 0.17, 1.55);
+}
+
+
+.toggle-switch.night .switch {
+  left: 0rem;
+  background-color: black;
+}
+
+.toggle-switch.night {
+  background-color: #2C3E50;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  font-size: 30rem;
+  color: yellow;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.cloud {
+  position: absolute;
+  top: 50%;
+  left: 30rem;
+  transform: translateY(-50%);
+  font-size: 30rem;
+  color: white;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.moon {
+  position: absolute;
+  top: 50%;
+  right:10rem;
+  transform: translateY(-50%);
+  font-size: 20rem;
+  color: lightgray;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.stars {
+  position: absolute;
+  top: 50%;
+  right: 20rem;
+  transform: translateY(-50%);
+  font-size: 30rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.toggle-switch.night .sun,
+.toggle-switch.night .cloud {
+  opacity: 0;
+}
+
+.toggle-switch.night .moon,
+.toggle-switch.night .stars {
+  opacity: 1;
+}
+
+[data-theme="light"] .dark-mode-toggle {
+  background-color: #f1f1f1;
+  color: #333;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .dark-mode-toggle:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+
+[data-theme="dark"] .dark-mode-toggle {
+  background-color: #333;
+  color: #e0e0e0;
+  box-shadow: 0 4rem 6rem rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .dark-mode-toggle:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
