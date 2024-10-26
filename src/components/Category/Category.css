@@ -1,0 +1,21 @@
+.task-category {
+    background-color: var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+  }
+
+  .pill {
+    padding: 0.5rem 1rem;
+    border-radius: var(--circular-radius);
+    padding: 4rem 16rem;
+    color: #395BD3;
+    border : 1rem solid #395BD3;
+    background-color: #F6F6FF;
+    
+    cursor: pointer;
+  }
+  
+  .pill.selected {
+    background-color: var(--primary-color);
+    color: white;
+  }
