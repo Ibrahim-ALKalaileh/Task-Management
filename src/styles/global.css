@@ -1,0 +1,66 @@
+@import './variables.css';
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 1px;
+    overflow: hidden;
+    scrollbar-width: none; 
+    scroll-behavior: smooth;
+  }
+ 
+  .app {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color); 
+    padding: var(--padding-base);      
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    -ms-overflow-style: none; 
+  }
+  
+  body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } 
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  

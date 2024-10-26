@@ -1,0 +1,54 @@
+:root {
+
+    
+    --font-size-small: 8rem;
+    --font-size-large: 16rem;
+    --font-size-xlarge: 24rem;
+  
+  
+    --padding-base: 28rem;
+    --padding-large: 32rem;
+    --padding-small: 25rem;
+    --margin-small: 8rem;
+    --margin-large: 16rem;
+  
+ 
+    --task-width: 100%;             
+    --task-height: auto;
+    --header-height: 104rem;          
+    --button-width: auto;
+    --button-height: 40rem;
+
+    
+    --small-border-radius: 4rem;
+    --border-radius: 8rem;
+    --large-border-radius: 16rem;
+    --circular-radius: 50rem;
+  
+    
+    --bg-color: #ECF0FF;
+    --tooltip-bg-color: #0C1049;
+    --component-bg-color: white;
+    --nav-background-color: white;
+    --text-color: #333;
+    --primary-color: #4a90e2;
+    --secondary-color: #d0021b;
+    --completed-color: #7ed321;
+    --incomplete-color: #f5a623;
+    --border-color: #e6e6e6;
+    
+  }
+
+  [data-theme="dark"] {
+    
+    --background-color: #121212;
+    --component-bg-color: #444242;
+    --nav-background-color: white;
+    --nav-text-color: #4d4949;
+    --text-color: white;
+    --button-color: #1e88e5;
+    --button-hover-color: #1565c0;
+    
+  }
+
+  
