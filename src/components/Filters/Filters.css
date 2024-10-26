@@ -1,0 +1,29 @@
+.filters {
+    padding: var(--padding-base);
+    background-color: var(--component-bg-color);
+    border: 1rem solid var(--border-color);
+    border-radius: var(--large-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    height:100%;
+    width:260rem;
+    box-shadow: 0rem 4rem 16rem 0rem #C1C1C140;
+    transition: background-color 1s ease;
+
+  }
+  
+  .filter-title {
+    font-size: 18rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .filters {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+  }
+  
