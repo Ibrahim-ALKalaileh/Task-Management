@@ -1,0 +1,34 @@
+.task-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 728rem;
+    margin: 0;
+    gap: 8rem;
+    flex-grow: 1;
+    overflow-y: hidden;
+  }
+  
+  .task-list-container::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .custom-list{
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  @media (min-width: 1440rem) {
+    .task-list-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 2560rem) {
+    .task-list-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
