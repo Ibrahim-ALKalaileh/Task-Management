@@ -1,0 +1,100 @@
+
+
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+    color: #AEAFC4; 
+    width: 100%;
+    
+  }
+  
+  .task-form input {
+    height: 50rem;
+  }
+  input::placeholder {
+    color: #AEAFC4;
+  }
+
+  .task-form textarea::placeholder {
+    color: #AEAFC4;
+  }
+  
+  .shared-input-styles {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 16rem;
+    border: 1rem solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    box-sizing: border-box; 
+  }
+  
+
+  .task-form textarea {
+    width: 100%;
+    height: 160rem;
+    
+    resize: none; 
+    overflow-y: scroll;
+    box-sizing: border-box; 
+  }
+  
+  .task-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .task-form-buttons button {
+    padding: var(--padding-small);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  
+  .task-form-buttons button:first-child {
+    background-color: #ccc;
+  }
+  
+ .modalHeader{
+    font-size: 32rem;
+    font-weight: 600;
+ }
+
+ .category-selection{
+    width: 100%;
+    border: 1rem solid #EBECFB;
+    border-radius: 6rem;
+    padding: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+ }
+
+ .category-pills{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 50rem;
+ }
+
+ .task-form textarea::-webkit-scrollbar {
+    width: 0; 
+    height: 0; 
+  }
+  
+
+  .task-form textarea {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+
+  .error-msg {
+    color: red;
+    margin-bottom: 1rem;
+  }
+  
+  
