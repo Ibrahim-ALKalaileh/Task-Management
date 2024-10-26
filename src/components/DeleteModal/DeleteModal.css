@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    color: black;
     padding: 28rem;
     border-radius: 24rem;
     max-width: 605rem;
@@ -40,6 +41,7 @@
     width: 100%;
     justify-content: space-between;
     gap: 15rem;
+    font-size: 19rem;
 }
 
 .cancel-btn{
@@ -49,6 +51,7 @@
     cursor: pointer;
     width: 50%;
     color: #395BD3;
+    font-size: 16rem;
     background-color:  #F2F5FF;
 }
 
@@ -59,6 +62,7 @@
     border: none;
     border-radius: 8rem;
     cursor: pointer;
+    font-size: 16rem;
     width: 50%;
 }
 .delete-btn:hover{

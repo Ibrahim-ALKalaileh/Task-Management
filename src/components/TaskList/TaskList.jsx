@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback } from 'react';
+import React, { useMemo, useCallback,useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FixedSizeList as List } from 'react-window';
 // import VirtualizedList from '../../util/VirtualizedList/VirtualizedList';
@@ -6,6 +6,14 @@ import Task from '../Task/Task';
 import './TaskList.css';
 
 const TaskList = ({ tasks, filters, onEdit, onDelete, onToggle }) => {
+  const taskListRef = useRef(null);
+  const [taskListHeight, setTaskListHeight] = useState(0);
+
+  useEffect(() => {
+    if (taskListRef.current) {
+      setTaskListHeight(taskListRef.current.clientHeight);
+    }
+  }, []);
   
   const filteredTasks = useMemo(() => {
     return tasks.filter((task) => {
@@ -35,13 +43,13 @@ const TaskList = ({ tasks, filters, onEdit, onDelete, onToggle }) => {
       </div>
     );
   }, [filteredTasks, onEdit, onToggle, onDelete]);
-
+  console.log("TaskList rendered",taskListHeight);
   return (
-    <div className="task-list-container">
+    <div className="task-list-container" ref={taskListRef}>
       {filteredTasks.length > 0 ? (
         <List
           className="custom-list"
-          height={800} 
+          height={taskListHeight?taskListHeight:800} 
           itemCount={filteredTasks.length} 
           itemSize={120}
           width="100%" 
