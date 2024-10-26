@@ -1,0 +1,37 @@
+
+.responsive-image-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  
+  
+}
+
+.responsive-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.responsive-image-container:hover .responsive-image {
+  opacity: 0.8;
+}
+
+
+.responsive-image-container[style*="width"] {
+  max-width: 100%;
+}
+
+.responsive-image-container[style*="height"] {
+  max-height: 100%;
+  
+}
+
+.hoverImage {
+    transform: scale(1.05);
+    height: 200rem;
+  }
+
