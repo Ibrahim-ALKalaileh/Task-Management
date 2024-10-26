@@ -1,0 +1,35 @@
+.header-nav {
+    background-color: var(--nav-background-color);
+    border-bottom: 1rem solid var(--border-color);
+    width: 100%;
+    color: black;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-large);
+    font-size: var(--font-size-xlarge);
+    line-height: 30px;
+    box-shadow: 0rem 4rem 16rem 0rem #C1C1C140;
+    border-radius: var(--large-border-radius);
+    margin-bottom: 20rem;
+    font-weight: 500;
+}
+
+.new-task-btn {
+    padding: var(--padding-small);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--circular-radius);
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .header-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16rem;
+      height: fit-content;
+    }
+    
+  }
